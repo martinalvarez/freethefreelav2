@@ -5,6 +5,7 @@ import {
     Legend,    
     Line,
     LineChart,
+    ResponsiveContainer,
     Tooltip,    
     XAxis,
     YAxis
@@ -12,7 +13,7 @@ import {
 import {
   Box, 
   Heading, 
-  Flex, 
+  Flex,
   Tooltip as ChakraTooltip 
 } from '@chakra-ui/react';
 import { QuestionOutlineIcon } from '@chakra-ui/icons';
@@ -31,23 +32,24 @@ function RevenueChart({ data }: { data: AnnualizedRevenue[] | null}) {
 
   return (
       <Flex justifyContent="center" p={4}>
-        <LineChart
-          data={data || undefined}
-          height={250}
-          margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-          width={730}          
-        >
-            <CartesianGrid strokeDasharray="3 3" />
-            <Brush dataKey="name" height={30} />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            
-            <Line name="Current Growth" type="monotone" dataKey="growth" stroke="#82ca9d" />                
-            <Line name="Current Growth +10%" type="monotone" dataKey="growth10" stroke="#8884d8" />
-            <Line name="Current Growth +20%" type="monotone" dataKey="growth20" stroke="#000000" />
-        </LineChart>
+        <ResponsiveContainer width="100%" height={250}>
+          <LineChart
+            data={data || undefined}
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+          >
+              <CartesianGrid strokeDasharray="3 3" />
+              <Brush dataKey="name" height={30} />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              
+              <Line name="Current Growth" type="monotone" dataKey="growth" stroke="#82ca9d" />                
+              <Line name="Current Growth +10%" type="monotone" dataKey="growth10" stroke="#8884d8" />
+              <Line name="Current Growth +20%" type="monotone" dataKey="growth20" stroke="#000000" />
+          </LineChart>
+        </ResponsiveContainer>
+
 
         <ChakraTooltip label={tooltipLabel} aria-label='A tooltip' placement='left-start'>
           <QuestionOutlineIcon />
