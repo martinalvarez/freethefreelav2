@@ -1,0 +1,156 @@
+{
+  "annualizedRevenue": [
+    {
+      "growth": 4000,
+      "growth10": 2400,
+      "growth20": 2400,
+      "name": "Nov23"      
+    },
+    {
+      "growth": 3000,
+      "growth10": 1398,
+      "growth20": 2210,
+      "name": "Dec23"
+    },
+    {
+      "growth": 2000,
+      "growth10": 9800,
+      "growth20": 2290,
+      "name": "Jan24"      
+    },
+    {
+      "growth": 2780,
+      "growth10": 3908,
+      "growth20": 2000,
+      "name": "Feb24"
+    },
+    {
+      "growth": 1890,
+      "growth10": 4800,
+      "growth20": 2181,
+      "name": "Mar24"
+    },
+    {
+      "growth": 2390,
+      "growth10": 3800,
+      "growth20": 2500,
+      "name": "Apr24"
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "May24"
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "Jun24"
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "Jul24"
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "Aug24"
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "Sep24"
+
+    },
+    {
+      "growth": 3490,
+      "growth10": 4300,
+      "growth20": 2100,
+      "name": "Oct24"
+    }
+  ],
+  "banksAccounts": [
+    {
+      "account": "Money Market",
+      "balance": 43200,
+      "id": 1,
+      "name": "Plaid Money Market"
+    },
+    {
+      "account": "Savings",
+      "balance": 210,      
+      "id": 2,
+      "name": "Plaid Saving"
+    },
+  {
+      "account": "Ira",
+      "balance": 320.76,
+      "id": 3,
+      "name": "Plaid IRA"      
+    },
+    {
+      "account": "Cd",
+      "balance": 1000,
+      "id": 4,
+      "name": "PLiad CD"      
+    },
+    {
+      "account": "Checking",
+      "balance": 110,      
+      "id": 5,
+      "name": "Plaid Checking"
+    },
+    {
+      "account": "401k",
+      "balance": 23631.98,      
+      "id": 6,
+      "name": "PLaid 401k"
+    }
+  ],
+  "businessHealth": {
+    "elegibity": 80,
+    "creditScore": 620,
+    "monthlyProfit": 0,
+    "monthlyRevenue": 14000
+  },  
+  "creditCards": [
+    {
+      "balance": 410,
+      "id": 1,      
+      "interestRate": 12.5,
+      "limit": 2000,      
+      "minimumPayment": 20,
+      "name": "Plaid Credit Card",      
+      "paymentDate":"2020-05-01"
+    }
+  ],
+  "loans": [
+    {
+      "id": 1,
+      "monthlyPayment": 138.05,
+      "name": "Plaid Student Loan",
+      "paymentDate": "2019-05-27",
+      "remainingBalance": 65262,      
+      "type": "Student"
+    },
+    {
+      "id": 2,
+      "monthlyPayment": 3141.54,
+      "name": "Plaid Mortgage",
+      "paymentDate": "2019-11-14",
+      "remainingBalance": 56302.06,      
+      "type": "Mortgage"
+    }
+  ],
+  "totalDebt": 121974.06,
+  "totalMinimumMonthlyPayment": 3299.59,  
+  "user": {
+    "firstName": "Martin",
+    "lastName": "Alvarez" 
+  }
+}
